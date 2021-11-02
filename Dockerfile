@@ -1,4 +1,4 @@
-From node:Carbon
+From node:crbon
 workdir usr/src/app
 copy package*.json ./
 run npm install
