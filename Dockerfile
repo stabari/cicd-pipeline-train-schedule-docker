@@ -1,7 +1,7 @@
-From node:crbon
-workdir usr/src/app
-copy package*.json ./
-run npm install
-copy . .
-expose 8080
-cmd ["npm","start"]
+FROM node:crbon
+WORKDIR usr/src/app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+CMD ["npm","start"]
